@@ -285,9 +285,6 @@ jobs:
           mkdir -p ./r2srom/
           #mv friendlywrt-rk3328/out/*img* ./r2srom/
           cp friendlywrt-rk3328/friendlywrt/.config ./r2srom/
-          cd ./r2srom/
-          sha256sum *img* > sha256sum.txt
-          cd ..
           mkdir -p ./r2srom/ipk/
           . ./scripts/copyipk.sh
           cd ./r2srom/ipk/
@@ -304,7 +301,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.sec_token }}
         with:
           tag_name: ${{ steps.assemble_artifact.outputs.release_tag }}
-          release_name: 自动发布 ${{ steps.assemble_artifact.outputs.release_tag }}
+          release_name: ${{ steps.assemble_artifact.outputs.release_tag }}
           draft: false
           prerelease: false
       - name: Upload Release Asset
