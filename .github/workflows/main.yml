@@ -210,6 +210,11 @@ jobs:
           git clone -b master --single-branch https://github.com/project-openwrt/luci-app-koolproxyR.git
           mv luci-app-koolproxyR friendlywrt-rk3328/friendlywrt/package
 
+      - name: Add Luci-app-autorewan
+        run: |
+          git clone -b master --single-branch https://github.com/kongfl888/luci-app-autorewan.git
+          mv luci-app-autorewan friendlywrt-rk3328/friendlywrt/package
+
       - name: Add smartdns
         run: |
           git clone -b master --single-branch https://github.com/pymumu/openwrt-smartdns.git
