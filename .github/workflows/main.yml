@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/r2s_lean_minimal2.yml'
       - 'base_rk3328.seed'
+      - 'app.rk3328.seed'
   schedule:
     - cron: '10 13 * * 1,3,5'
 
