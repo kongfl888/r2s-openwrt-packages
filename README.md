@@ -10,4 +10,42 @@
 
 仅适用于这里的[OPENWRT版](https://github.com/kongfl888/nanopi-openwrt/blob/master/README.md)，其他路由系统你开心就行。
 
+### 大概有
+
+- 一些基础和依赖包
+- 一些kmod包
+- ssr(plus)
+- ssrs
+- adbyby
+- koolproxyR
+- adguardhome
+- v2ray
+- ddns
+- smartdns
+- openclash
+- passwall
+- r2sflasher (R2S刷机)
+- IPTV helper
+- OpenAppFilter (应用过滤 -- 可用于限制某些常见游戏应用联网，家长控制类)
+- autorewan （定时重拨号）
+- autoreboot（定时重启）
+- UnblockNeteaseMusic（解锁某网音乐下载链接）
+- mwan3/mwan3helper （负载均衡）
+- syncdial（多拨）
+- QOS
+- SQM(QOS)
+- HD-IDLE (硬盘休眠)
+- samba server 36
+- autosamba
+- minidlna
+- qbittorrent
+- frpc(内网穿透)
+- ZeroTier(VPN LAN)
+- wol（网络唤醒）
+- vlmcsd(KMS服务器)
+- Turbo ACC 网络加速
+- netdata 系统监控
+
+etc.
+
 [K] 2020
