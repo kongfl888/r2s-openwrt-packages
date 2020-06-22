@@ -14,6 +14,7 @@
 
 - 一些基础和依赖包
 - 一些kmod包
+- ipv6基础包
 - ssr(plus)
 - ssrs
 - aria2
@@ -24,6 +25,7 @@
 - ddns
 - smartdns
 - openclash
+- openvpn(openvpn-openssl)
 - passwall
 - r2sflasher (R2S刷机)
 - IPTV helper
@@ -39,6 +41,7 @@
 - samba server 36
 - autosamba
 - minidlna
+- vsftpd（FTP）
 - qbittorrent
 - frpc(内网穿透)
 - ZeroTier(VPN LAN)
@@ -46,6 +49,8 @@
 - vlmcsd(KMS服务器)
 - Turbo ACC 网络加速
 - netdata 系统监控
+- diskman
+- docker
 
 etc.
 
