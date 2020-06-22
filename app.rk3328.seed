@@ -45,3 +45,15 @@ CONFIG_PACKAGE_luci-app-docker=y
 CONFIG_PACKAGE_luci-lib-docker=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 
+CONFIG_PACKAGE_luci-app-xlnetacc=y
+
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-wifischedule=y
+CONFIG_PACKAGE_luci-app-guest-wifi=y
+CONFIG_PACKAGE_luci-app-kodexplorer=y
+CONFIG_PACKAGE_luci-app-verysync=y
+CONFIG_PACKAGE_luci-app-nft-qos=y
+CONFIG_PACKAGE_luci-app-usb-printer=y
+CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-app-shairplay=y
+CONFIG_PACKAGE_luci-app-advanced-reboot=y

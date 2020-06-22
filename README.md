@@ -33,6 +33,7 @@
 - OpenAppFilter (应用过滤 -- 可用于限制某些常见游戏应用联网，家长控制类)
 - autorewan （定时重拨号）
 - autoreboot（定时重启）
+- advanced-reboot（高级重启-移植自Linksys）
 - UnblockNeteaseMusic（解锁某网音乐下载链接）
 - mwan3/mwan3helper （负载均衡）
 - syncdial（多拨）
@@ -40,10 +41,12 @@
 - frpc
 - QOS
 - SQM(QOS)
+- ntf-QOS
 - HD-IDLE (硬盘休眠)
 - samba server 36
 - autosamba
 - minidlna
+- shairplay
 - vsftpd（FTP）
 - qbittorrent
 - frpc(内网穿透)
@@ -57,6 +60,13 @@
 - filetransfer 文件传输
 - diskman
 - docker
+- accesscontrol 访问控制（家长控制类）
+- wifischedule WIFI计划（定时关闭wifi）
+- kodexplorer KOD可道云私人网盘
+- verysync 微力同步（各设备间同步文件）
+- guest-wifi 访客wifi
+- xlnetacc 迅雷快鸟
+- usb-printer USB打印服务
 
 etc.
 
