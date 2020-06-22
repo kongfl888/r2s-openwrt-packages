@@ -29,7 +29,7 @@ jobs:
       run: |
         dirname $0
         ls ../
-        echo "a".a.txt
+        echo "a">a.txt
         mv .a.txt p/
   build2:
     runs-on: ubuntu-latest
