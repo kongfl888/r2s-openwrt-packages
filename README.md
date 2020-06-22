@@ -16,6 +16,7 @@
 - 一些kmod包
 - ssr(plus)
 - ssrs
+- aria2
 - adbyby
 - koolproxyR
 - adguardhome
