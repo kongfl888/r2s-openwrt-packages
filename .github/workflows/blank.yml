@@ -30,8 +30,9 @@ jobs:
         echo "a".a.txt
         mv .a.txt p/
   build2:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     needs: build
+    steps:
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
       run: |
