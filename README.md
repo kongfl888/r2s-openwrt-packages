@@ -13,6 +13,7 @@
 ### 大概有
 
 - 一些基础和依赖包
+- 一些工具包
 - 一些kmod包
 - ipv6基础包
 - ssr(plus)
@@ -35,6 +36,8 @@
 - UnblockNeteaseMusic（解锁某网音乐下载链接）
 - mwan3/mwan3helper （负载均衡）
 - syncdial（多拨）
+- upnp
+- frpc
 - QOS
 - SQM(QOS)
 - HD-IDLE (硬盘休眠)
@@ -47,8 +50,11 @@
 - ZeroTier(VPN LAN)
 - wol（网络唤醒）
 - vlmcsd(KMS服务器)
-- Turbo ACC 网络加速
-- netdata 系统监控
+- flowoffload（Turbo ACC 网络加速）
+- netdata 实时监控
+- block-mount 挂载点
+- ramfree 释放内存
+- filetransfer 文件传输
 - diskman
 - docker
 
