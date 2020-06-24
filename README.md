@@ -1,5 +1,7 @@
 # NanoPi-r2s-openwrt-packages
 
+![nanopi-r2s-packages](https://github.com/kongfl888/r2s-openwrt-packages/workflows/nanopi-r2s-packages/badge.svg)
+
 可直接安装的IPK包集
 
 [下载地址](https://github.com/kongfl888/r2s-openwrt-packages/releases)
