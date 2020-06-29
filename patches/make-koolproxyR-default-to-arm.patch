@@ -1,0 +1,25 @@
+From bf429811b4e9fb0f8d6791e1cbdf217155cfd345 Mon Sep 17 00:00:00 2001
+From: kongfl888 <kongfl888@outlook.com>
+Date: Mon, 29 Jun 2020 01:48:57 +0800
+Subject: [PATCH] make koolproxyR default to arm
+
+---
+ Makefile | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/Makefile b/Makefile
+index 49d16b5..779df02 100644
+--- a/Makefile
++++ b/Makefile
+@@ -89,6 +89,8 @@ ifeq ($(ARCH),x86_64)
+ endif
+ ifeq ($(ARCH),arm)
+ 	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
++else
++	$(INSTALL_BIN) ./files/bin/arm $(1)/usr/share/koolproxy/koolproxy
+ endif
+ endef
+ 
+-- 
+2.14.1.windows.1
+

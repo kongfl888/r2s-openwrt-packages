@@ -145,6 +145,20 @@ jobs:
           CONFIG_PACKAGE_luci-app-r2sflasher=y
           CONFIG_PACKAGE_luci-app-zerotier=y
           CONFIG_PACKAGE_kmod-br-netfilter=y
+          CONFIG_PACKAGE_luci-theme-argon-light-mod=y
+          CONFIG_PACKAGE_timedreboot=y
+          CONFIG_PACKAGE_luci-app-filebrowser=y
+          CONFIG_PACKAGE_luci-theme-Butterfly=y
+          CONFIG_PACKAGE_luci-theme-argon-mc=y
+          CONFIG_PACKAGE_luci-theme-argon-mod=y
+          CONFIG_PACKAGE_luci-theme-argonv2=y
+          CONFIG_PACKAGE_luci-theme-argonv3=y
+          CONFIG_PACKAGE_luci-theme-atmaterial=y
+          CONFIG_PACKAGE_luci-theme-darkmatter=y
+          CONFIG_PACKAGE_luci-theme-netgearv2=y
+          CONFIG_PACKAGE_luci-theme-opentomato=y
+          CONFIG_PACKAGE_luci-theme-opentomcat=y
+          CONFIG_PACKAGE_luci-theme-rosy=y
           CONFIG_BRIDGE_NETFILTER=m
           # CONFIG_PACKAGE_luci-app-accesscontrol is not set
           # CONFIG_PACKAGE_luci-app-nlbwmon is not set
@@ -204,6 +218,26 @@ jobs:
           mv ../../scripts/flash_rom.sh package/base-files/files/root/flash_rom.sh && chmod +x package/base-files/files/root/flash_rom.sh
           echo -e '\nMr.K Build\n' >> package/base-files/files/etc/banner
 
+      - name: Add Luci-theme
+        run: |
+          mkdir -p friendlywrt-rk3328/friendlywrt/package/lean/ || echo ""
+          mkdir -p friendlywrt-rk3328/friendlywrt/feeds/luci/themes
+          rm -rf friendlywrt-rk3328/friendlywrt/*/*/luci-theme-argon || echo ""
+          git clone https://github.com/Leo-Jo-My/luci-theme-argon-light-mod.git
+          mv -f luci-theme-argon-light-mod friendlywrt-rk3328/friendlywrt/package
+
+      - name: Install project-openwrt sw
+        run: |
+          rm -rf openwrt
+          git clone --depth 1 -b openwrt-18.06 https://github.com/project-openwrt/openwrt.git
+          mkdir -p friendlywrt-rk3328/friendlywrt/package/ctcgfw
+          cp -a openwrt/package/ctcgfw/filebrowser friendlywrt-rk3328/friendlywrt/package/ctcgfw/
+          cp -a openwrt/package/ctcgfw/luci-app-filebrowser friendlywrt-rk3328/friendlywrt/package/ctcgfw/
+          cp -a openwrt/package/ctcgfw/luci-theme-Butterfly-dark friendlywrt-rk3328/friendlywrt/package/ctcgfw/
+          cp -a openwrt/package/ctcgfw/luci-theme-Butterfly friendlywrt-rk3328/friendlywrt/package/ctcgfw/
+          cp -a openwrt/package/ctcgfw/luci-theme-* friendlywrt-rk3328/friendlywrt/package/ctcgfw/
+          rm -rf openwrt
+
       - name: Add AdGuardHome
         run: |
           git clone -b master --single-branch https://github.com/rufengsuixing/luci-app-adguardhome
@@ -213,13 +247,21 @@ jobs:
 
       - name: Add luci-app-koolproxyR
         run: |
-          git clone -b master --single-branch https://github.com/project-openwrt/luci-app-koolproxyR.git
+          git clone -b master --single-branch https://github.com/project-openwrt/luci-app-koolproxyR
+          cd luci-app-koolproxyR
+          git apply ../patches/make-koolproxyR-default-to-arm.patch
+          cd ..
           mv luci-app-koolproxyR friendlywrt-rk3328/friendlywrt/package
 
       - name: Add Luci-app-autorewan
         run: |
           git clone -b master --single-branch https://github.com/kongfl888/luci-app-autorewan.git
           mv luci-app-autorewan friendlywrt-rk3328/friendlywrt/package
+
+      - name: Add Luci-app-timedreboot
+        run: |
+          git clone -b master --single-branch https://github.com/kongfl888/luci-app-timedreboot.git
+          mv luci-app-timedreboot friendlywrt-rk3328/friendlywrt/package
 
       - name: Add smartdns
         run: |
