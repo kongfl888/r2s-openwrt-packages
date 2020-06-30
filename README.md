@@ -34,7 +34,7 @@
 - IPTV helper
 - OpenAppFilter (应用过滤 -- 可用于限制某些常见游戏应用联网，家长控制类)
 - autorewan （定时重拨号）
-- autoreboot（定时重启）
+- timedreboot（定时重启）
 - advanced-reboot（高级重启-移植自Linksys）
 - UnblockNeteaseMusic（解锁某网音乐下载链接）
 - mwan3/mwan3helper （负载均衡）
@@ -60,6 +60,7 @@
 - block-mount 挂载点
 - ramfree 释放内存
 - filetransfer 文件传输
+- filebrowser 文件浏览
 - diskman
 - docker
 - accesscontrol 访问控制（家长控制类）
