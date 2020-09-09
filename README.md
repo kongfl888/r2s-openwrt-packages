@@ -10,8 +10,6 @@
 
 需要哪个就用WEB上传到路由器，直接安装
 
-仅适用于这里的[OPENWRT版](https://github.com/kongfl888/OpenWrt4R2S/blob/r2s/README.md)，其他路由系统你开心就行。
-
 ### 大概有
 
 - 一些基础和依赖包
